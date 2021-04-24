@@ -1,13 +1,124 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: #43c6ac; /* fallback for old browsers */
+  background: no-repeat center fixed -webkit-linear-gradient(to right, #191654, #43c6ac); /* Chrome 10-25, Safari 5.1-6 */
+  background: no-repeat center fixed linear-gradient(to right, #191654, #43c6ac); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.app {
+  padding: 20px;
+}
+
+.appNav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #1125219c;
+  display: flex;
+  align-items: center;
+}
+
+.appContainer {
+  overflow: scroll;
+  margin-top: 50px;
+}
+
+.app_dialog {
+  background: no-repeat center fixed -webkit-linear-gradient(to right, #191654, #43c6ac);
+  background: no-repeat center fixed linear-gradient(to right, #191654, #43c6ac);
+}
+
+.app_dialog_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app_avatar_image {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.app_button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.5rem 2rem;
+  background-color: #43c6ac !important;
+  margin: 10px !important;
+}
+
+.app_button:hover {
+  background-color: #191654 !important;
+}
+
+.app_profile_name {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  font-family: monospace;
+}
+
+.app_intro_description {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: monospace;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.app_profile_link {
+  color: #fff;
+}
+
+.MuiFilledInput-input {
+  padding: 6px !important;
+  background-color: rgb(191 230 221) !important;
+  border-radius: 5px;
+}
+
+.MuiDialog-container {
+  align-items: flex-start !important;
+}
+
+.MuiDialogActions-root {
+  justify-content: center !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
