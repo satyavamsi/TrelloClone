@@ -58,21 +58,16 @@ class App extends Component {
                 <Divider style={{ backgroundColor: '#fff', margin: 20 }} />
               This Trello Clone is built using React.js, Material-UI and React-Beautiful-DND.
           </p>
-
             </div>
             <button onClick={this.setIntro} className="app_button">
               Lets Go!!
           </button>
-
-
-
-
           </DialogContent>
-
         </Dialog>
         <div className="app">
           <div className="appNav">
             <h2 style={{ color: 'white', marginLeft: 20, letterSpacing: 1.5 }}>Trello Clone</h2>
+            <a href="https://github.com/satyavamsi/TrelloClone" target="_blank">Github</a>
           </div>
           <div className="appContainer">
             <Droppable droppableId="all-lists" direction="horizontal" type="list">

@@ -29,6 +29,13 @@ body {
   background-color: #1125219c;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.appNav a {
+  color: white;
+  text-decoration: underline;
+  margin-right: 6px;
 }
 
 .appContainer {
